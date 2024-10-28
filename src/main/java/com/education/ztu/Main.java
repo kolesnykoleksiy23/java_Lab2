@@ -40,7 +40,7 @@ public class Main {
 
 
         System.out.println("-----Employee ------:");
-        Employee employee = new Employee(55, "Andriy", "Hardworker", Gender.NEUTER, Location.KYIV, "Genesis", "Senior Engineer");
+        Employee employee = new Employee(55, "Andriy", "Hardworker", Gender.MALE, Location.KYIV, "Genesis", "Senior Engineer");
         System.out.println(employee.getFullInfo());
         employee.getOccupation();
         System.out.println("We create employee objects: " + Employee.showCounter());
@@ -48,17 +48,14 @@ public class Main {
 
 
         System.out.println("----- Dynamic Casting -----");
-        Person tech = (Person) teacher;
-        Person stud = (Person) student1;
-        Person empl = (Person) employee;
+        Person tech =  teacher;
+        Person stud = student1;
+
         tech.getOccupation();
         stud.getOccupation();
-        empl.getOccupation();
-        if (tech instanceof Teacher) {
-            System.out.println("tech is a Teacher");
-        }
-        if (tech instanceof Person) {
-            System.out.println("tech is a Person");
-        }
+
+        System.out.println(tech instanceof Teacher);
+        System.out.println(tech instanceof Person);
+
     }
 }

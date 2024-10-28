@@ -2,8 +2,7 @@ package com.education.ztu.humans;
 
 public enum Gender {
     MALE("male, so address me Mr."),
-    FEMALE("female, so address me Mrs."),
-    NEUTER("neuter, I don't know what I want to do.");
+    FEMALE("female, so address me Mrs.");
 
     private final String description;
     private Gender(String description) {

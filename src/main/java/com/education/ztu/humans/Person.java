@@ -13,7 +13,7 @@ public abstract class Person implements Human {
         firstName = "-";
         lastName = "-";
         fullInfo = firstName + " " + lastName;
-        gender = Gender.valueOf("NEUTER");
+        gender = Gender.valueOf("MALE");
         location = Location.RIVNE;
         fullInfo = "----";
     }
